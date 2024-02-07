@@ -1,0 +1,15 @@
+.myPages {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    list-style-type: none;
+    justify-content: space-between;
+    /* padding: none; */
+}
+
+.contactInfo{
+    .myPages {
+        display: flex;
+        flex-direction: column;
+    }
+}

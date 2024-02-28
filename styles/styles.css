@@ -1,0 +1,90 @@
+header {
+  /* background-color: #9dc2f0; */
+  text-decoration: #ed254e;
+}
+body {
+  font-family: Lato;
+  color: #4c191b;
+}
+.myPages {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.pageContent {
+  margin: 10px;
+}
+
+.contactInfo {
+  p {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.projectCard {
+  border: 2px solid #4c191b;
+  border-radius: 10px;
+  padding: 10px;
+  /* padding: 0px 10px;
+    margin: 10px;
+    align-content: center; */
+
+  img {
+    width: 80vw;
+    padding: 5px;
+    /* margin: 5px; */
+    border: 1px solid #4c191b;
+  }
+}
+#beautyqlickIMG {
+  filter: opacity(30%);
+}
+.pCardInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .projectCard {
+    margin: 10px;
+    img {
+      width: 20vw;
+      align-self: flex-end;
+    }
+  }
+  .pCardInfo {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 768px){
+    .projectCards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .pCardInfo{
+        
+        border: 1px solid #4c191b;
+        padding: 10px;
+    }
+    .projectCard {
+        width: 45vw;
+        border: none;
+        img {
+            /* margin: 5px; */
+            width: 12vw;
+        }
+}
+}

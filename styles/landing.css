@@ -1,6 +1,5 @@
 body, html {
     margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
     /* overflow: hidden; */
@@ -15,7 +14,7 @@ body, html {
 .background {
     width: 100%;
     height: 100%;
-    background-color: var(----ffec51);
+    background-color: var(--paleYell);
     position: absolute;
 }
 
@@ -23,12 +22,12 @@ body, html {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-color: var(--coral);
+    background-color: var(--brightYell);
     position: absolute;
     top: calc(50% - 150px);
     left: calc(50% - 150px);
     animation: breathe 4s infinite alternate ease-in-out; /* Animation for breathing effect */
-    box-shadow: 0 0 50px 20px var(--coral); /* Neon glow effect */
+    box-shadow: 0 0 50px 20px var(--brightYell); /* Neon glow effect */
     z-index: 1; 
 }
 
@@ -47,7 +46,7 @@ body, html {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: var(--coral); /* Neon yellow */
+    background-color: var(--brightYell); /* Neon yellow */
     position: absolute;
     top: 0;
     left: 0;

@@ -1,14 +1,9 @@
-:root {
-    --purple: #A499BE;
-    --green: #C1FF9B;
-  }
-
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -20,21 +15,21 @@ body, html {
 .background {
     width: 100%;
     height: 100%;
-    background-color: var(--purple); /* Neon pink background */
+    background-color: var(----ffec51);
     position: absolute;
 }
 
 .yellow-blob {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    background-color: var(--green); /* Neon yellow */
+    background-color: var(--coral);
     position: absolute;
     top: calc(50% - 150px);
     left: calc(50% - 150px);
     animation: breathe 4s infinite alternate ease-in-out; /* Animation for breathing effect */
-    box-shadow: 0 0 50px 20px var(--green); /* Neon glow effect */
-    z-index: 1; /* Ensure it's above the background */
+    box-shadow: 0 0 50px 20px var(--coral); /* Neon glow effect */
+    z-index: 1; 
 }
 
 @keyframes breathe {
@@ -42,21 +37,23 @@ body, html {
         transform: scale(1);
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(1.3);
     }
 }
 
 .new-blob {
-    width: 300px;
-    height: 300px;
+    /* z-index: 0; */
+    z-index: revert;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-color: var(--green); /* Neon yellow */
+    background-color: var(--coral); /* Neon yellow */
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
     animation: fade-out 1s ease forwards; /* Animation for fade-out effect */
-    z-index: 2; /* Ensure it's above the background and yellow blob */
+    z-index: 2; 
     pointer-events: none; /* Prevent interaction with new blobs */
     opacity: 0; /* Initially hidden */
 }

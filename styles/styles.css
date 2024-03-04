@@ -1,17 +1,36 @@
-header {
-  /* background-color: #9dc2f0; */
-  text-decoration: #ed254e;
+:root {
+  --purple: #7776bc;
+  --lightPurple: #cdc7e5;
+  --paleYell: #fefcec;
+  --brightYell: #ffec51;
+  --coral: #ff674d;
 }
+
+a {
+  text-decoration: none; 
+  background-color: none;
+  color: var(--purple);
+}
+h1, h3, .contactInfo{
+  padding-left: 20px;
+}
+body{
+  background: var(--paleYell);
+
+}
+
 body {
   font-family: Lato;
   color: #4c191b;
 }
 .myPages {
-  display: flex;
+  display: flex; 
   flex-direction: row;
-  width: 80vw;
+  width: 40vw;
   list-style-type: none;
-  justify-content: space-between;
+  a{
+    z-index: 3;
+    margin: 0 20px;}
 }
 .pageContent {
   margin: 10px;
@@ -24,24 +43,22 @@ body {
   }
 }
 
+
 .projectCard {
-  border: 2px solid #4c191b;
+  border: 2px solid var(--purple);
   border-radius: 10px;
   padding: 10px;
-  /* padding: 0px 10px;
-    margin: 10px;
-    align-content: center; */
 
   img {
     width: 80vw;
     padding: 5px;
-    /* margin: 5px; */
-    border: 1px solid #4c191b;
+    border: 1px solid var(--purple);
   }
 }
 #beautyqlickIMG {
   filter: opacity(30%);
 }
+
 .pCardInfo {
   display: flex;
   flex-direction: column;
@@ -76,15 +93,15 @@ body {
     }
     .pCardInfo{
         
-        border: 1px solid #4c191b;
+        border: 1px solid var(--purple);
         padding: 10px;
     }
     .projectCard {
-        width: 45vw;
+        width: 85vw;
         border: none;
         img {
-            /* margin: 5px; */
-            width: 12vw;
+            margin: 5px;
+            width: 22vw;
         }
 }
 }

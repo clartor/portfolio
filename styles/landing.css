@@ -17,7 +17,13 @@ body, html {
     background-color: var(--paleYell);
     position: absolute;
 }
-
+#frontpage{
+    font-size: 40px;
+}
+.myPages{
+    font-size: 30px;
+    
+}
 .yellow-blob {
     width: 250px;
     height: 250px;

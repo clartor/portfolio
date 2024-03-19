@@ -6,6 +6,8 @@
   --coral: #ff674d;
 }
 
+
+
 a {
   text-decoration: none; 
   background-color: none;
@@ -14,8 +16,11 @@ a {
 body {
   padding-left: 20px;
   background: var(--paleYell);
-  font-family: Lato;
+  font-family: "Jacquarda Bastarda",  Lato;
   /* color: #4c191b; */
+}
+.myName {
+  font-size: 40px;
 }
 .myPages {
   display: flex; 

@@ -28,6 +28,7 @@ body {
   flex-direction: row;
   width: 40vw;
   list-style-type: none;
+  font-size: 30px;
   a{
     z-index: 3;
     margin-right: 20px;}
@@ -88,7 +89,7 @@ body {
   }
 }
 
-
+/* 
 @media only screen and (min-width: 600px) {
   .projectCard {
     margin: 10px;
@@ -105,9 +106,9 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-}
+} */
 
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
     .projectCards{
         display: flex;
         flex-wrap: wrap;
@@ -125,5 +126,11 @@ body {
             margin: 5px;
             width: 22vw;
         }
+}
+.myName{
+  font-size: 26px;
+}
+.myPages{
+  font-size: 20px;
 }
 }

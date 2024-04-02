@@ -4,8 +4,8 @@
   --paleYell: #fefcec;
   --brightYell: #ffec51;
   --coral: #ff674d;
+  --coral2: #ffd151;
 }
-
 
 
 a {
@@ -14,7 +14,8 @@ a {
   color: var(--purple);
 }
 body {
-  padding-left: 20px;
+  padding: 20px;
+  width: 100%;
   background: var(--paleYell);
   font-family: "Jacquarda Bastarda",  Lato;
   /* color: #4c191b; */
@@ -42,14 +43,19 @@ body {
   }
 
 
+  .pageContent {
+
+    width: 90vw;
+  }
 
 .projectCard {
   border: 2px solid var(--purple);
   border-radius: 10px;
   padding: 10px;
+  margin: 10px;
 
   img {
-    width: 80vw;
+    width: 20vw;
     padding: 5px;
     border: 1px solid var(--purple);
   }
@@ -60,7 +66,6 @@ body {
 
 .pCardInfo {
   display: flex;
-  flex-direction: column;
   margin: 5px;
   flex-wrap: nowrap;
   align-items: center;

@@ -1,92 +1,99 @@
 :root {
   --purple: #7776bc;
   --lightPurple: #cdc7e5;
-  --paleYell: #fefcec;
+  --paleYell: #fffef5;
   --brightYell: #ffec51;
   --coral: #ff674d;
   --coral2: #ffd151;
 }
 
-
 a {
-  text-decoration: none; 
+  text-decoration: none;
   background-color: none;
   color: var(--purple);
 }
 body {
   padding: 20px;
-  width: 100%;
   background: var(--paleYell);
-  font-family: "Jacquarda Bastarda",  Lato;
+  font-family: "Jacquarda Bastarda", Lato;
   /* color: #4c191b; */
 }
 .myName {
   font-size: 40px;
 }
 .myPages {
-  display: flex; 
+  display: flex;
   padding-left: 0 !important;
   flex-direction: row;
   width: 40vw;
   list-style-type: none;
   font-size: 30px;
-  a{
+  a {
     z-index: 3;
-    margin-right: 20px;}
+    margin-right: 20px;
+  }
 }
-
 
 .contactInfo p {
   width: fit-content;
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
-
-  .pageContent {
-
-    width: 90vw;
-  }
-
+.projectCards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .projectCard {
   border: 2px solid var(--purple);
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  opacity: 20%;
 
+  
   img {
     width: 20vw;
     padding: 5px;
     border: 1px solid var(--purple);
+    float: right;
   }
+}
+.projectCard:hover {
+  opacity: 100%;
+  /* transform: scale(1.1); */
 }
 #beautyqlickIMG {
   filter: opacity(30%);
 }
 
 .pCardInfo {
-  display: flex;
+  /* display: flex;
+  justify-content: space-around;
   margin: 5px;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: center; */
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
-
-.extraLinked{
-  
-  .linkd{
+.extraLinked {
+  .linkd {
     padding: 6px;
     border-radius: 20px;
     background-color: #0077b5;
     color: aliceblue;
   }
-  .insta{
+  .insta {
     padding: 6px;
     border-radius: 20px;
     background-color: #fbad50;
     color: #ffead7;
   }
-  .git{
+  .git {
     padding: 6px;
     border-radius: 20px;
     background-color: #000000;
@@ -113,29 +120,28 @@ body {
   }
 } */
 
-@media only screen and (max-width: 768px){
-    .projectCards{
+@media only screen and (max-width: 768px) {
+  /* .projectCards{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    } */
+  .pCardInfo {
+    border: 1px solid var(--purple);
+    padding: 10px;
+  }
+  .projectCard {
+    width: 85vw;
+    border: none;
+    img {
+      margin: 5px;
+      width: 22vw;
     }
-    .pCardInfo{
-        
-        border: 1px solid var(--purple);
-        padding: 10px;
-    }
-    .projectCard {
-        width: 85vw;
-        border: none;
-        img {
-            margin: 5px;
-            width: 22vw;
-        }
-}
-.myName{
-  font-size: 26px;
-}
-.myPages{
-  font-size: 20px;
-}
+  }
+  .myName {
+    font-size: 26px;
+  }
+  .myPages {
+    font-size: 20px;
+  }
 }

@@ -12,6 +12,10 @@ a {
   background-color: none;
   color: var(--purple);
 }
+h3{
+  font-size: 29px;
+  margin: 0px;
+}
 body {
   padding: 20px;
   background: var(--paleYell);
@@ -69,36 +73,44 @@ body {
 }
 
 .pCardInfo {
-  /* display: flex;
-  justify-content: space-around;
-  margin: 5px;
-  flex-wrap: nowrap;
-  align-items: center; */
   display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
 }
-
+.pCardInfoPart{
+  padding: 0px 20px;
+}
+p{
+  font-size: 22px;
+  letter-spacing: .05rem;
+}
 .extraLinked {
+  display: flex;
+  flex-direction: row;
+  
+
   .linkd {
-    padding: 6px;
+    padding: 12px;
     border-radius: 20px;
     background-color: #0077b5;
     color: aliceblue;
   }
   .insta {
-    padding: 6px;
+    padding: 12px;
     border-radius: 20px;
     background-color: #fbad50;
     color: #ffead7;
   }
   .git {
-    padding: 6px;
+    padding: 12px;
     border-radius: 20px;
     background-color: #000000;
     color: aliceblue;
   }
+}
+.xtralinkedThing{
+ padding: 4px;
 }
 
 /* 

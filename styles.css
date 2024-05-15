@@ -29,7 +29,7 @@ body {
   display: flex;
   padding-left: 0 !important;
   flex-direction: row;
-  width: 40vw;
+  min-width: 40vw;
   list-style-type: none;
   font-size: 30px;
 }
@@ -44,6 +44,35 @@ body {
   flex-direction: column;
 }
 
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 25vw;
+}
+.contactFormInput{
+  margin: 5px 0;
+  height: 5vh;
+  font-size: 16px;
+  border: 1px solid var(--purple);
+  background-color: var(--paleYell);
+}
+
+#spare {
+  height: 10vh;
+  /* height: 200% !important; */
+}
+.contactFormBtn{
+  font-size: 16px;
+  width: fit-content;
+  border: 2px solid var(--purple);
+  
+}
+.contactFormBtn:hover {
+  background-color: var(--lightPurple);
+
+}
 .projectCards {
   display: flex;
   flex-direction: column;
@@ -89,7 +118,7 @@ p{
   display: flex;
   flex-direction: row;
   
-
+}
   .linkd {
     padding: 12px;
     border-radius: 20px;
@@ -108,9 +137,9 @@ p{
     background-color: #000000;
     color: aliceblue;
   }
-}
+
 .xtralinkedThing{
- padding: 4px;
+ margin: 4px;
 }
 
 /* 

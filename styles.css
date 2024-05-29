@@ -25,10 +25,14 @@ body {
 .myName {
   font-size: 40px;
 }
+/* .headElems{
+  display: flex;
+  
+} */
 .myPages {
   display: flex;
-  padding-left: 0 !important;
   flex-direction: row;
+  padding-left: 0 !important;
   min-width: 40vw;
   list-style-type: none;
   font-size: 30px;
@@ -142,6 +146,16 @@ p{
  margin: 4px;
 }
 
+.albumIMGelem{
+  width: 100px;
+  height: 100px;
+
+  img {
+    width: 20vw;
+    padding: 5px;
+    border: 1px solid var(--purple);
+}
+}
 /* 
 @media only screen and (min-width: 600px) {
   .projectCard {

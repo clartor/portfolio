@@ -12,13 +12,13 @@ body, html {
         display: flex; 
         padding-left: 0 !important;
         flex-direction: row;
-        width: 40vw;
+        width: 50vw;
         list-style-type: none;
     }
         
     .myHeaderPagesLinks{
           z-index: 3;
-          margin: 20px;
+          margin:0 20px;
         }
 
 .yellow-blob {

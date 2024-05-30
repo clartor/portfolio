@@ -30,18 +30,23 @@
                     <h2 class="contactInfo">Lämna din info här, så kontaktar jag dig.</h2>
 
                     <form action="https://formsubmit.co/a30277ca36198f56f319953750082a58" method="POST" class="contactForm" >
+                    
+                      <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+                      <!-- disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
                       <input class="contactFormInput" type="text" placeholder="namn" name="namn" required>
                       <input class="contactFormInput" type="text" placeholder="nummer" name="nummer" required>
                       <input class="contactFormInput" type="text" placeholder="epost" name="epost" required>
-                      <!-- <input class="contactFormInput" type="text" id="spare" placeholder="övrig text / fråga?" name="spare"> -->
-                      <button type="submit" onclick="tack()" class="contactFormBtn">skicka</button>
+                      <input class="contactFormInput" type="text" placeholder="övr" name="spare">
+                      
+                      <input type="hidden" name="_next" value="https://clornbloom.se/messageSent.html">
+
+
+                      <button type="submit" class="contactFormBtn">skicka</button>
                     </div>
 
-                    <!-- <p class="xtralinkedThing">
-                      clara.tornblom@gmail.com
-                    </p>
-                    <p class="xtralinkedThing">
-                    </p> -->
                     <div class="extraLinked">
                       <p class="xtralinkedThing">
                         <a class="git" href="https://github.com/clartor"> github </a>
@@ -67,8 +72,8 @@
 </html>
 <script>
 
-function tack() {
-  alert("I will contact you asap!");
-}
+// function tack() {
+//   alert("I will contact you asap!");
+// }
 
 </script>

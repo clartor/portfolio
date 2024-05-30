@@ -1,7 +1,6 @@
 <html lang="en">
-    <link rel="stylesheet" href="./styles.css">
-<head>
-     
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">  
@@ -21,37 +20,44 @@
                   <a class="myPagesLinks" href="./bio.html"><li>Om mig</li></a>
                   <a class="myPagesLinks" href="./portfolio.html"><li>Projekt</li></a>
                   <a class="myPagesLinks" href="./contact.html"><li>Kontakt</li></a>
-                  <a class="myPagesLinks" href="./album.html"><li>Album</li></a>
+                  <!-- <a class="myPagesLinks" href="./album.html"><li>Album</li></a> -->
 
                 </ul>
               </header>
             <div class="pageContent">
                 <div class="contactInfo">
-                  <!-- <div class="contactFormDiv">
-
+                  <div class="contactFormDiv">
                     <h2 class="contactInfo">Lämna din info här, så kontaktar jag dig.</h2>
-                    <form class="contactForm" onsubmit="emailSend(); reset(); return false;">
-                      <input class="contactFormInput" type="text" id="name" placeholder="namn" name="name" required>
-                      <input class="contactFormInput" type="text" id="number" placeholder="email or number" name="number" required>
-                      <input class="contactFormInput" type="text" id="spare" placeholder="övrig text / fråga?" name="spare">
-                      <button type="submit" class="contactFormBtn">Skicka</button>
-                    </div> -->
 
-                    <p class="xtralinkedThing">
+                    <form action="https://formsubmit.co/a30277ca36198f56f319953750082a58" method="POST" class="contactForm" >
+                      <input class="contactFormInput" type="text" placeholder="namn" name="namn" required>
+                      <input class="contactFormInput" type="text" placeholder="nummer" name="nummer" required>
+                      <input class="contactFormInput" type="text" placeholder="epost" name="epost" required>
+                      <!-- <input class="contactFormInput" type="text" id="spare" placeholder="övrig text / fråga?" name="spare"> -->
+                      <button type="submit" onclick="tack()" class="contactFormBtn">skicka</button>
+                    </div>
+
+                    <!-- <p class="xtralinkedThing">
                       clara.tornblom@gmail.com
                     </p>
                     <p class="xtralinkedThing">
-                    </p>
+                    </p> -->
                     <div class="extraLinked">
-                    <p class="xtralinkedThing">
-                      <a class="git" href="https://github.com/clartor"> github </a>
-                    </p>
-                    <p class="xtralinkedThing">
-                      <a class="linkd" href="https://www.linkedin.com/in/clara-t%C3%B6rnblom-a8a38a196/">linkedin</a>
-                    </p>
-                    <p class="xtralinkedThing">
-                      <a class="insta" href="https://www.instagram.com/clornblom/">instagram</a>
-                    </p>
+                      <p class="xtralinkedThing">
+                        <a class="git" href="https://github.com/clartor"> github </a>
+                      </p>
+                      <p class="xtralinkedThing">
+                        <a class="linkd" href="https://www.linkedin.com/in/clara-t%C3%B6rnblom-a8a38a196/">linkedin</a>
+                      </p>
+                      <p class="xtralinkedThing">
+                        <a class="insta" href="https://www.instagram.com/clornblom/">instagram</a>
+                      </p>
+                      <p class="xtralinkedThing">
+                        <a class="tiktok" href="https://www.tiktok.com/@clornbloom?lang=sv-SE">tiktok</a>
+                      </p>
+                      <p class="xtralinkedThing">
+                        <a class="pint" href="https://se.pinterest.com/claratornblom/">pinterest</a>
+                      </p>
                   </div>
                 </div>
             </div>
@@ -59,3 +65,10 @@
       </div>
 </body>
 </html>
+<script>
+
+function tack() {
+  alert("I will contact you asap!");
+}
+
+</script>

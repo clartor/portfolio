@@ -61,18 +61,22 @@ body {
   font-size: 16px;
   border: 1px solid var(--purple);
   background-color: var(--paleYell);
+  padding: 8px;
 }
 
-#spare {
-  height: 10vh;
-  /* height: 200% !important; */
-}
-.contactFormBtn{
-  font-size: 16px;
+.contactFormBtn {
+  appearance: button;
+  padding: 8px;
+  margin: 4px;
   width: fit-content;
-  border: 2px solid var(--purple);
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #fff, #f8eedb);
+  border: 0 solid var(--purple);;
+  border-radius: .5rem;
   
+  box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
 }
+
 .contactFormBtn:hover {
   background-color: var(--lightPurple);
 
@@ -90,12 +94,12 @@ body {
   opacity: 20%;
 
   
-  img {
-    width: 20vw;
-    padding: 5px;
-    border: 1px solid var(--purple);
-    float: right;
-  }
+}
+.cardIMG {
+  width: 20vw;
+  padding: 5px;
+  border: 1px solid var(--purple);
+  float: right;
 }
 .projectCard:hover {
   opacity: 100%;
@@ -121,6 +125,8 @@ p{
 .extraLinked {
   display: flex;
   flex-direction: row;
+  justify-content: end;
+  padding-top: 20vh;
   
 }
   .linkd {
@@ -132,7 +138,11 @@ p{
   .insta {
     padding: 12px;
     border-radius: 20px;
-    background-color: #fbad50;
+    background: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045
+    );
     color: #ffead7;
   }
   .git {
@@ -141,7 +151,21 @@ p{
     background-color: #000000;
     color: aliceblue;
   }
-
+  .tiktok{
+    padding: 8px;
+    margin: 4px;
+    border-radius: 18px;
+    background-color: #000000;
+    color: aliceblue;
+    box-shadow :-4px -3px 0px 3px rgba(36, 243, 238, .7), 4px 3px 0px 3px rgb(255,0,80);
+  }
+  .pint {
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #E60022;
+    color: aliceblue;
+  }
+  
 .xtralinkedThing{
  margin: 4px;
 }
@@ -150,48 +174,24 @@ p{
   width: 100px;
   height: 100px;
 
-  img {
-    width: 20vw;
-    padding: 5px;
-    border: 1px solid var(--purple);
+
 }
-}
-/* 
-@media only screen and (min-width: 600px) {
-  .projectCard {
-    margin: 10px;
-    img {
-      width: 20vw;
-      align-self: flex-end;
-    }
-  }
-  .pCardInfo {
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-} */
 
 @media only screen and (max-width: 768px) {
-  /* .projectCards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    } */
+
   .pCardInfo {
     border: 1px solid var(--purple);
     padding: 10px;
+    
   }
   .projectCard {
     width: 85vw;
     border: none;
-    img {
-      margin: 5px;
-      width: 22vw;
-    }
+    padding:10px 0px ;
+    margin:10px 0px ;
+  }
+  .contactForm {
+    width: 90vw;
   }
   .myName {
     font-size: 26px;
@@ -199,4 +199,20 @@ p{
   .myPages {
     font-size: 20px;
   }
+  .extraLinked {
+    flex-wrap: wrap;
+  
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .pCardInfo {
+
+    flex-direction: column-reverse;
+  
+  } 
+  .cardIMG{
+    width: 40vw;
+  }
+
 }

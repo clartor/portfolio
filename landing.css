@@ -73,22 +73,27 @@ body, html {
 }
 
 /* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-    .yellow-blob {
-        width: 150px; /* Adjusted size for smaller screens */
-        height: 150px; /* Adjusted size for smaller screens */
-        top: calc(50% - 75px); /* Adjusted position for smaller screens */
-        left: calc(50% - 75px); /* Adjusted position for smaller screens */
-    }
-
-    .new-blob {
-        width: 150px; /* Adjusted size for smaller screens */
-        height: 150px; /* Adjusted size for smaller screens */
-    }
+@media only screen and (max-width: 1028px) {
     .frontpage{
-        font-size: px;
+        font-size: 35px;
     }
+    
     .myHeaderPages{
-        font-size: 20px;
+        font-size: 15px;
+        width: 80vw;
     }
+    .myHeaderPagesLinks{
+        margin: 0 10px;
+    }
+    .yellow-blob{
+        display: none;
+    }
+    .new-blob {
+        width: 150px; 
+        height: 150px; 
+    } 
 }
+/* 
+@media only screen and (max-width: 700px) {
+
+} */
